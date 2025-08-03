@@ -1,0 +1,131 @@
+.footer__top {
+    padding: 36px 0;
+}
+
+.footer__bottom {
+    background: var(--color-primary);
+    height: 54px;
+}
+
+#footer .grid {
+    row-gap: 38px;
+}
+
+.footer__logo {
+    grid-column: 1/ span 2;
+}
+
+.footer__address {
+    grid-column: 1/ span 4;
+    font-style: normal;
+}
+
+.footer__follow {
+    grid-column: 1/ span 4;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer__follow-title {
+    align-self: flex-start;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.footer__socials {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer__socials-item {
+    border-radius: 50%;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+}
+
+.footer__socials-item:hover {
+    transform: scale(1.2);
+    box-shadow: 10px 10px 20px 0 rgba(250, 141, 184, 0.2);
+}
+
+.footer__socials-item:hover path,
+.footer__socials-item:hover clipPath {
+    fill: var(--color-primary);
+}
+
+.footer__socials-link {
+    display: block;
+    line-height: 0;
+}
+
+.footer__nav {
+    grid-column: 6/ span 7;
+    grid-row: 1/span 3;
+    display: flex;
+    justify-content: space-between;
+    gap: 36px;
+}
+
+.footer__nav-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 36px;
+}
+
+.footer__nav-title {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 133%;
+    letter-spacing: 0.02em;
+    color: var(--color-gray-400);
+}
+
+.footer__nav .navbar>ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+@media(max-width: 768px) {
+    .footer__logo {
+        grid-column: span 2;
+    }
+
+    .footer__address {
+        grid-column: span 3;
+        grid-row: 2;
+    }
+
+    .footer__follow {
+        grid-column: span 8;
+        grid-row: 3;
+    }
+
+    #footer .footer__nav {
+        grid-column: span 8;
+        grid-row: 4;
+    }
+}
+
+@media(max-width: 576px) {
+
+    .footer__address {
+        grid-column: span 3;
+    }
+
+    .footer__follow {
+        grid-column: span 4;
+    }
+
+    #footer .footer__nav {
+        grid-column: span 4;
+    }
+
+    .footer__nav-title {
+        font-size: 22px;
+    }
+}

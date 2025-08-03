@@ -1,0 +1,12 @@
+.image {
+    align-self: center;
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+}
+
+@media(max-width:768px) {
+    .image {
+        display: none;
+    }
+}

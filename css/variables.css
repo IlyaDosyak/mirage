@@ -1,0 +1,20 @@
+:root {
+    --font-family: "Circular Std", sans-serif;
+    --second-family: "Proxima Nova", sans-serif;
+    --third-family: "Josefin Sans", sans-serif;
+
+    --color-primary: #f78bb6;
+    --color-white: #fff;
+    --color-gray-400: #56597a;
+    --color-gray-300: #919299;
+    --color-gray-200: #ababab;
+    --color-gray-100: #aaaaab;
+
+    --section-padding: 75pt 0;
+}
+
+@media (max-width: 576px) {
+    :root {
+        --section-padding: 50pt 0;
+    }
+}

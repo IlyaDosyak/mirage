@@ -1,0 +1,28 @@
+.container {
+    width: 100%;
+    max-width: 1215px;
+    padding: 0 16pt;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 8pt;
+}
+
+.flex {
+    display: flex;
+}
+
+@media(max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(8, 1fr);
+    }
+}
+
+@media(max-width: 576px) {
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
